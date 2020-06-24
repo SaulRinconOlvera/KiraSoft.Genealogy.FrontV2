@@ -28,9 +28,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/assets/dist/scss/style.scss"
             ],
-            "scripts": []
+            "scripts": [ 
+            ]
           },
           "configurations": {
             "production": {
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "GenealogyFront"
+    }
+  },
+  "defaultProject": "GenealogyFront",
+  "cli": {
+    "analytics": "c5e281ed-66fe-45b2-86ae-0161b64c67d3"
+  }
 }
