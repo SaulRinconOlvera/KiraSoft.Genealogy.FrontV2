@@ -4,6 +4,8 @@ import { PagePrincipalComponent } from './pages/principal/page-principal.compone
 import { LoginComponent } from './shared/session/login/login.component';
 import { RegisterComponent } from './shared/session/register/register.component';
 import { Error400Component } from './shared/error/errors-400/error-400.component';
+import { TranslateModule } from '@ngx-translate/core';
+import { NgModule } from '@angular/core';
 
 const applicationRoutes: Routes = [
     {
@@ -15,8 +17,22 @@ const applicationRoutes: Routes = [
     } ,
     { path: 'login', component: LoginComponent},
     { path: 'register', component: RegisterComponent},
-    { path: '**', component: Error400Component},
-    { path: '', redirectTo: '/login' }
+    { path: '**', component: Error400Component}
+
 ];
 
-export const APP_ROUTES = RouterModule.forRoot(applicationRoutes, { useHash: false });
+@NgModule
+({
+    imports: [
+      RouterModule.forRoot(applicationRoutes),
+      TranslateModule
+    ],
+    exports: [
+      RouterModule,
+    ]
+  })
+
+
+  export class AppRoutingModule { }
+
+// export const APP_ROUTES = RouterModule.forRoot(applicationRoutes, { useHash: false });

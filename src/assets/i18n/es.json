@@ -1,0 +1,15 @@
+{
+    "Pages": {
+        "Login": {
+            "UserName": "Nombre del usuario",
+            "Password": "Contraseña",
+            "RememberMe": "Recuerdame",
+            "ForgotPass": "¿Olvidaste tu contraseña?",
+            "Login": "Ingresar",
+            "SingUp": "Regístrate",
+            "NoAccount": "¿Aun no tienes una cuenta?",
+            "Facebook": "Ingresa con tu cuenta de Facebook",
+            "Google": "Ingresa con tu cuenta de Google"
+        }
+    }
+}
